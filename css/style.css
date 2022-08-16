@@ -1,0 +1,403 @@
+@font-face {
+    font-family: 'Merriweather';
+    src: url(../fonts/Merriweather-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Poor Richard';
+    src: url(../fonts/poorrichard.ttf);
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url(../fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: url('../images/Untitled-2.png') no-repeat center bottom/cover;
+}
+
+.navbar {
+    padding: 28px 60px;
+}
+
+.navbar-toggler {
+    background-color: #ffffff;
+}
+
+.navbar .navbar-brand {
+    font-size: 25px;
+    color: #fcbc02;
+    font-weight: bold;
+    text-align: center;
+}
+
+.navbar .navbar-nav .nav-link {
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Work Sans";
+    padding: 8px 0px 8px 60px;
+}
+
+.navbar .navbar-nav .nav-link.active {
+    color: #fcbc02;
+    position: relative;
+}
+
+.navbar .navbar-nav .nav-link.active::before {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 5px;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 45px;
+    background-color: #fcbc02;
+}
+
+.disc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 85vh;
+}
+
+.disc h3 {
+    font-size: 36px;
+    color: #fcbc02;
+    font-weight: 400;
+    font-family: "Work Sans";
+    margin-bottom: 0%;
+    padding-bottom: 30px;
+}
+
+.disc h1 {
+    font-size: 130px;
+    letter-spacing: 13px;
+    color: #ffffff;
+    font-family: "Poor Richard";
+    margin-bottom: 0%;
+    line-height: 0.9;
+    padding-bottom: 40px;
+}
+
+.spoon {
+    position: relative;
+    width: 100%;
+    margin-bottom: 35px;
+    width: 550px;
+}
+
+.spoon::before {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    background-color: #fcbc02;
+}
+
+.spoon::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    background-color: #fcbc02;
+}
+
+.open {
+    font-size: 30px;
+    letter-spacing: 3px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Work Sans";
+    text-align: center;
+    margin-bottom: 0%;
+    padding-bottom: 40px;
+}
+
+.open_time {
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Work Sans";
+    text-align: center;
+    margin-bottom: 0%;
+    padding-bottom: 20px;
+}
+
+.about_cont {
+    padding: 45px;
+    filter: drop-shadow(0px 6px 11.5px rgba(0, 0, 0, 0.22));
+    background-color: #ffffff;
+    border: 10px solid #000000;
+}
+
+.main_section {
+    background-color: #f5f5f5;
+    background-image: url('../images/Image\ 5.png');
+}
+
+.about_sec {
+    padding: 100px 0px;
+}
+
+.about_cont h3 {
+    font-size: 30px;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Merriweather";
+    margin-bottom: 30px;
+}
+
+.about_cont p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #707070;
+    font-weight: 400;
+    font-family: "Work Sans";
+}
+
+.cards_cont {
+    padding-bottom: 100px;
+}
+
+.about_cards {
+    width: 100%;
+    max-width: 286px;
+    padding: 25px;
+    border-radius: 6px;
+    filter: drop-shadow(0 0 11.5px rgba(0, 0, 0, 0.08));
+    background-color: #ffffff;
+}
+
+.about_cards img {
+    width: auto;
+    height: 77px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.about_cards h4 {
+    font-size: 18px;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Merriweather";
+    margin-bottom: 15px;
+}
+
+.about_cards p {
+    font-size: 14px;
+    line-height: 18px;
+    color: #707070;
+    font-weight: 400;
+    font-family: "Work Sans";
+}
+
+.menu {
+    font-size: 36px;
+    line-height: 15px;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Merriweather";
+    padding-bottom: 20px;
+}
+
+.menu_div {
+    padding-bottom: 60px;
+}
+
+.menu_item {
+    width: 100%;
+    height: 600px;
+    background-image: url('../images/pexels-marvin-ozz-2474661.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+}
+
+.menu_item1 {
+    background-image: url('../images/sanket-shah-eEWlcfydzQ4-unsplash.png');
+}
+
+.menu_item2 {
+    background-image: url('../images/pexels-shantanu-pal-2679501.png');
+}
+
+.menu_item3 {
+    background-image: url('../images/abstract-1239041_1920.png');
+}
+
+.meit_sec {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 25px 12px;
+    width: 100%;
+}
+
+.dish_details h4,
+.dish_details p {
+    font-size: 25px;
+    line-height: 41px;
+    color: #ffffff;
+    margin: 0%;
+    font-weight: 700;
+    font-family: "Merriweather";
+}
+
+.dish_details p span {
+    font-size: 16px;
+    line-height: 35px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Work Sans";
+}
+
+.dish_details+p {
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Work Sans";
+}
+
+.info_btn {
+    width: 160px;
+    height: 39px;
+    border-radius: 4px;
+    background-color: #f0c419;
+    font-size: 18px;
+    border: 1px solid #f0c419;
+    line-height: 20px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Work Sans";
+}
+
+.eye_btn {
+    position: relative;
+    width: 40px;
+    height: 39px;
+    border-radius: 20px;
+    border: 1px solid #f0c419;
+    background-color: #f0c419;
+    margin-left: 15px;
+}
+
+.info_btn:hover,
+.eye_btn:hover {
+    background-color: #f0c419;
+    border: 1px solid #f0c419;
+    color: #ffffff;
+}
+
+.eye_btn img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width:1400px) {
+
+    .disc h3,
+    .disc h1,
+    .open,
+    .open_time {
+        padding-bottom: 10px;
+    }
+
+    .spoon {
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (max-width:1200px) {
+    .navbar {
+        padding: 18px;
+    }
+}
+
+@media (max-width:991px) {
+
+
+    .navbar .navbar-nav .nav-link.active::before {
+        top: 45%;
+        left: 15px;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        padding: 8px 0px 8px 30px;
+    }
+
+    .about_cards {
+        margin: 0px auto;
+    }
+
+    .navbar .navbar-brand {
+        font-size: 28px;
+    }
+
+    .spoon {
+        width: 400px;
+    }
+
+}
+
+@media (max-width:768px) {
+    .disc h1 {
+        font-size: 90px;
+    }
+
+    .spoon {
+        width: 350px;
+    }
+
+
+}
+
+@media (max-width:575px) {
+    .disc h1 {
+        font-size: 43px;
+    }
+
+    .open_time {
+        font-size: 16px;
+    }
+
+    .navbar {
+        padding: 8px;
+    }
+
+    .about_cont {
+        padding: 15px;
+    }
+
+    .dish_details h4,
+    .dish_details p {
+        font-size: 21px;
+    }
+
+    .spoon {
+        width: 200px;
+    }
+}
